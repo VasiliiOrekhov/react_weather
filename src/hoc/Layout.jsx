@@ -12,5 +12,8 @@ export const Layout = () => {
 const Background = styled('div')`
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
 `;

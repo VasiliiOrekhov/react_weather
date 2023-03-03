@@ -1,12 +1,10 @@
 import { Fragment } from 'react';
-import { MyButton } from '../components/UI/MyButton';
-import { MyInput } from '../components/UI/MyInput';
+import { LoginForm } from '../components/Form/LoginForm';
 
 export const Login = () => {
   return (
     <Fragment>
-      <MyButton>Авторизоваться</MyButton>
-      <MyInput type='text' placeholder='Введите логин'></MyInput>
+      <LoginForm />
     </Fragment>
   );
 };

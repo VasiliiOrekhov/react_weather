@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const MyButton = ({ children }) => {
-  return <Button>{children}</Button>;
+export const Button = ({ children, ...props }) => {
+  return <Buttons {...props}>{children}</Buttons>;
 };
 
-const Button = styled('button')`
+const Buttons = styled('button')`
   height: 37px;
   width: 280px;
   background: #3369f3;
@@ -16,4 +16,6 @@ const Button = styled('button')`
   line-height: 13px;
   text-align: center;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
 `;
